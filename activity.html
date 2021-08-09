@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity-Check</title>
+</head>
+
+<body>
+    <script>
+
+        const car ={
+            name:"X6",
+            FuelType:"Petrol",
+            Price: 700000,
+        }
+
+
+        const job = [
+            { id: 1, isActive: true },
+            { id: 2, isActive: false },  //Camel case naming convenction
+            { id: 3, isActive: true },
+            { id: 4, isActive: true }
+        ]; //this is the syntax to create an array of objects
+        const activeJobs = job.filter(job => job.isActive);
+        console.log(activeJobs);
+    </script>
+
+</body>
+
+</html>
